@@ -139,9 +139,10 @@
                      <div class="swiper-slide slide">
                         <div class="video-wrapper">
                            <video poster="img/slide-img1.png">
-                              <source type="video/mp4" src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4">
+                              <source type="video/mp4"
+                                 src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4">
                            </video>
-                        </div> 
+                        </div>
                      </div>
                      <div class="swiper-slide slide">
                         <img src="img/slide-img2.png" alt="">
@@ -224,13 +225,13 @@
                         </div>
                      </div>
                   </div>
-                  <div class="info__container-map">
+                  <div class="info__container-map" id="myBtn2">
                      <p class="info__container-text info__text">Настисніть,
                         щоб побачити
                         на Google картах</p>
                   </div>
                </div>
-               <a href="#" class="info__content-btn info__text">Технічні характеристики</a>
+               <a href="#" class="info__content-btn info__text" id="myBtn">Технічні характеристики</a>
                <div class="info__period">
                   <h4 class="info__subtitle">Оберіть період:</h4>
                   <div class="info__period-items">
@@ -322,7 +323,74 @@
             </div>
          </div>
       </div>
-   </div>
+      <div class="modal__wrapper" id="myModal">
+         <div class="modal">
+            <div class="modal__title">LED - екран</div>
+            <span class="modal__close close"><img src="img/burger-close.svg" alt=""></span>
+            <div class="modal__body">
+               <div class="modal__img">
+                  <img src="img/screen.png" alt="">
+               </div>
+               <div class="modal__content">
+                  <div class="modal__item">
+                     <p class="modal__text">Ширина кадру:</p>
+                     <p class="modal__text bold">480</p>
+                  </div>
+                  <div class="modal__item">
+                     <p class="modal__text">Висота кадру:</p>
+                     <p class="modal__text bold">366</p>
+                  </div>
+                  <div class="modal__item">
+                     <p class="modal__text">Розширення:</p>
+                     <p class="modal__text bold">480х336</p>
+                  </div>
+                  <div class="modal__item">
+                     <p class="modal__text">Коефіціент ширина/висота:</p>
+                     <p class="modal__text bold">1.4</p>
+                  </div>
+                  <div class="modal__item">
+                     <p class="modal__text">Швидкість передачі даних:</p>
+                     <p class="modal__text bold">380 кбит/сек</p>
+                  </div>
+                  <div class="modal__item">
+                     <p class="modal__text">Загальна швидкість потоку:</p>
+                     <p class="modal__text bold">380 кбит/сек</p>
+                  </div>
+                  <div class="modal__item">
+                     <p class="modal__text">Частота:</p>
+                     <p class="modal__text bold">25 кадрів в сек</p>
+                  </div>
+                  <div class="modal__item">
+                     <p class="modal__text">Кодування:</p>
+                     <p class="modal__text bold">MPEG-4 (.mp4)</p>
+                  </div>
+                  <div class="modal__item">
+                     <p class="modal__text">Аудіо-канал:</p>
+                     <p class="modal__text bold">вимкнений</p>
+                  </div>
+                  <h4 class="modal__content-title">Відео (текст)</h4>
+                  <div class="modal__item">
+                     <p class="modal__text">Основний текст:</p>
+                     <p class="modal__text bold">Висота букви: 150 мм; Ширина букви: 100мм; Товщина: 40 мм</p>
+                  </div>
+                  <div class="modal__item">
+                     <p class="modal__text">Мінімально допустимий текст:</p>
+                     <p class="modal__text bold">Висота: 60 мм; Ширина: 40мм; Товщина: 30 мм</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal__wrapper" id="map">
+         <div class="modal">
+            <span class="modal__close close"><img src="img/burger-close.svg" alt=""></span>
+            <div class="modal__body">
+               <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2523.2634198002775!2d25.354694351155704!3d50.77069027201873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47259751582ab6e7%3A0xbea5ee71533a5fb7!2z0KDQsNC50L7QvS7Qm9GD0YbRjNC6!5e0!3m2!1sru!2sua!4v1657886737779!5m2!1sru!2sua"
+                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+         </div>
+      </div>
    </div>
 </section>
       <section class="section section__also">
