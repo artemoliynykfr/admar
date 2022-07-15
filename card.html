@@ -317,7 +317,7 @@
                <p class="info__subtext">Вартість вказана за один вихід 8 сек впродовж рекламного блоку. Всього рекламних
                   оголошень в блоці 8.</p>
                <div class="info__buttons">
-                  <a href="#" class="info__btn btn-outline">Замовити</a>
+                  <a href="#" class="info__btn btn-outline" id="myBtn3">Замовити</a>
                   <a href="#" class="info__btn btn">В кошик</a>
                </div>
             </div>
@@ -388,6 +388,113 @@
                <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2523.2634198002775!2d25.354694351155704!3d50.77069027201873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47259751582ab6e7%3A0xbea5ee71533a5fb7!2z0KDQsNC50L7QvS7Qm9GD0YbRjNC6!5e0!3m2!1sru!2sua!4v1657886737779!5m2!1sru!2sua"
                   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+         </div>
+      </div>
+      <div class="modal__wrapper" id="myModal2">
+         <div class="modal">
+            <div class="modal__title">Ваше замовлення</div>
+            <span class="modal__close close"><img src="img/burger-close.svg" alt=""></span>
+            <div class="modal__body">
+               <div class="modal__item">
+                  <div class="menu__item">
+                     <div class="menu__item-img">
+                        <img src="img/menu-img1.png" alt="">
+                     </div>
+                     <h4 class="menu__item-title menu__subtitle">Синеозерная ул. (в напрямку Нової Кільцевої)</h4>
+                     <p class="menu__item-text menu__text" id="code">Код: 6372</p>
+                     <p class="menu__item-text menu__text">Волинська обл., Луцьк, 33 район</p>
+                     <div class="info__period">
+                        <h4 class="info__subtitle">Оберіть період:</h4>
+                        <div class="info__period-items">
+                           <div class="info__period-checkbox btn-outline">
+                              <label class="custom-checkbox">
+                                 <input type="checkbox" checked>
+                                 <span class="info__period-text">Березень</span>
+                              </label>
+                           </div>
+                           <div class="info__period-checkbox btn-outline">
+                              <label class="custom-checkbox">
+                                 <input type="checkbox" checked>
+                                 <span class="info__period-text">Червень</span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="info__price">
+                        <h4 class="info__subtitle">Вартість:</h4>
+                        <p class="info__price-title">7900 </p>
+                        <p class="info__price-text info__text">грн/місяць</p>
+                     </div>
+                     <div class="info__price info__sum">
+                        <h4 class="info__subtitle info__sum">Разом:</h4>
+                        <p class="info__price-title">15 800 </p>
+                        <p class="info__price-text info__text">грн</p>
+                     </div>
+                  </div>
+               </div>
+               <form class="modal__form">
+                  <div class="modal__form-item">
+                     <label class="modal__form-label info__text">Як до вас звератись</label>
+                     <input type="text" class="modal__form-input" placeholder="Ваше ім’я">
+                  </div>
+                  <div class="modal__form-item">
+                     <label class="modal__form-label info__text">Мобільний<span>*</span></label>
+                     <input type="tel" class="modal__form-input" placeholder="+38 (000) 000 00 00" required>
+                  </div>
+                  <div class="modal__form-item">
+                     <label class="modal__form-label info__text">Електронна пошта<span>*</span> </label>
+                     <input type="email" class="modal__form-input" placeholder="Ваша електронна пошта" required>
+                  </div>
+                  <div class="modal__form-item">
+                     <label class="modal__form-label info__text">Чи є у вас макет/відео?</label>
+                     <div class="modal__form-content">
+                        <div class="menu__aside-radio radio">
+                           <label class="custom-radio">
+                              <input type="radio" name="color" value="так">
+                              <span class="menu__text">так</span>
+                           </label>
+                        </div>
+                        <div class="menu__aside-radio radio">
+                           <label class="custom-radio">
+                              <input type="radio" name="color" value="ні">
+                              <span class="menu__text">ні</span>
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="modal__form-item">
+                     <label class="modal__form-label info__text">Зручний спосіб зв’язку</label>
+                     <div class="modal__form-content">
+                        <div class="menu__aside-checkbox checkbox">
+                           <label class="custom-checkbox">
+                              <input type="checkbox">
+                              <span class="menu__text">дзвінок</span>
+                           </label>
+                        </div>
+                        <div class="menu__aside-checkbox checkbox">
+                           <label class="custom-checkbox">
+                              <input type="checkbox">
+                              <span class="menu__text">email</span>
+                           </label>
+                        </div>
+                        <div class="menu__aside-checkbox checkbox">
+                           <label class="custom-checkbox">
+                              <input type="checkbox">
+                              <span class="menu__text">viber</span>
+                           </label>
+                        </div>
+                        <div class="menu__aside-checkbox checkbox">
+                           <label class="custom-checkbox">
+                              <input type="checkbox">
+                              <span class="menu__text">telegram</span>
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+                  <button class="modal__form-btn btn">Відправити</button>
+                  <p class="info__subtext">*Протягом короткого часу ми з Вами зв’яжемось</p>
+               </form>
             </div>
          </div>
       </div>
