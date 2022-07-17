@@ -31,7 +31,7 @@
 		<title>Home</title>
 	</head>
 
-<body class="selector accordion filearea formvalid">
+<body>
    <header>
       <nav>
   <div class="container">
@@ -70,7 +70,7 @@
           <h4 class="nav__title">Особистий кабінет</h4>
           <ul class="nav__list">
             <li><a href="cabinet.html" class="nav__text text">Особисті дані</a></li>
-            <li><a href="#" class="nav__text text">Замовлення</a></li>
+            <li><a href="orders.html" class="nav__text text">Замовлення</a></li>
             <li><a href="#" class="nav__text text">Заявки на співпрацю</a></li>
             <li><a href="#" class="nav__text text">Історія переглядів</a></li>
             <li><a href="#" class="nav__text text">Власні пропозиції</a></li>
@@ -128,21 +128,21 @@
    <div class="container">
       <div class="cabinet">
          <div class="breadcrumps">
-            <a href="#" class="breadcrumps__text text">Головна</a>
+            <a href="index.html" class="breadcrumps__text text">Головна</a>
             <p class="breadcrumps__text text">></p>
-            <a href="#" class="breadcrumps__text text">Особистий кабінет</a>
+            <a href="cabinet.html" class="breadcrumps__text text">Особистий кабінет</a>
             <p class="breadcrumps__text text">></p>
-            <a href="#" class="breadcrumps__text text">Особисті дані</a>
+            <a href="cabinet.html" class="breadcrumps__text text">Особисті дані</a>
          </div>
          <div class="cabinet__body">
             <div class="cabinet__header nav__content">
                <ul class="nav__list">
-                  <li><a href="#" class="nav__text text">Замовлення</a></li>
+                  <li><a href="orders.html" class="nav__text text">Замовлення</a></li>
                   <li><a href="#" class="nav__text text">Заявки на співпрацю</a></li>
                   <li><a href="#" class="nav__text text">Історія переглядів</a></li>
                   <li><a href="#" class="nav__text text">Власні пропозиції</a></li>
                </ul>
-               <a href="#" class="nav__btn text"><img src="img/logout.svg" alt="">Вийти з кабінету</a>
+               <a href="javascript:history.back()" class="nav__btn text"><img src="img/logout.svg" alt="">Вийти з кабінету</a>
             </div>
             <div class="cabinet__items accordion">
                <div class="cabinet__item accordion__item">
@@ -150,23 +150,23 @@
                      <h2 class="cabinet__title title">Особисті дані</h2>
                      <img src="img/arrow-down.svg" alt="">
                   </div>
-                  <form action="#" class="cabinet__form accordion__content">
-                     <div class="cabinet__form-item">
+                  <form action="#" class="cabinet__form accordion__content formvalid">
+                     <div class="cabinet__form-item form__item">
                         <label class="cabinet__form-label text">Ім’я<span>*</span></label>
                         <input type="text" class="cabinet__form-input text" placeholder="Олександр" required>
-                        <p class="cabinet__form-result text">Некорректный формат данных</p>
+                        <p class="cabinet__form-result form__result text">Некорректный формат данных</p>
                      </div>
-                     <div class="cabinet__form-item">
+                     <div class="cabinet__form-item form__item">
                         <label class="cabinet__form-label text">Прізвище</label>
                         <input type="text" class="cabinet__form-input text" placeholder="Ваше прізвище">
-                        <p class="cabinet__form-result text">Некорректный формат данных</p>
+                        <p class="cabinet__form-result form__result text">Некорректный формат данных</p>
                      </div>
-                     <div class="cabinet__form-item">
+                     <div class="cabinet__form-item form__item">
                         <label class="cabinet__form-label text">Дата народження</label>
                         <input type="date" class="cabinet__form-input text" value="1990-01-01">
-                        <p class="cabinet__form-result text">Некорректный формат данных</p>
+                        <p class="cabinet__form-result form__result text">Некорректный формат данных</p>
                      </div>
-                     <div class="cabinet__form-item">
+                     <div class="cabinet__form-item form__item">
                         <label class="cabinet__form-label text">Стать</label>
                         <div class="cabinet__form-content">
                            <div class="menu__aside-radio radio">
@@ -183,7 +183,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="cabinet__form-item">
+                     <div class="cabinet__form-item form__item">
                         <label class="cabinet__form-label text">Мова</label>
                         <div class="cabinet__form-content">
                            <div class="menu__aside-checkbox checkbox">
@@ -200,7 +200,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="cabinet__form-item">
+                     <div class="cabinet__form-item form__item">
                         <label class="cabinet__form-label text">Сфера діяльності</label>
                         <div class='cabinet__form-select select'>
                            <select>
@@ -218,21 +218,21 @@
                      <h2 class="cabinet__title title">Контакти</h2>
                      <img src="img/arrow-down.svg" alt="">
                   </div>
-                  <form action="#" class="cabinet__form accordion__content">
-                     <div class="cabinet__form-item">
+                  <form action="#" class="cabinet__form accordion__content formvalid">
+                     <div class="cabinet__form-item form__item">
                         <label class="cabinet__form-label text">Мобільний<span>*</span></label>
                         <input type="tel" class="cabinet__form-input text" placeholder="+38 (000) 000 00 00" required>
-                        <p class="cabinet__form-result text">Некорректный формат данных</p>
+                        <p class="cabinet__form-result form__result text">Некорректный формат данных</p>
                      </div>
-                     <div class="cabinet__form-item">
+                     <div class="cabinet__form-item form__item">
                         <label class="cabinet__form-label text">Електронна пошта</label>
                         <input type="email" class="cabinet__form-input text" placeholder="Ваша електронна пошта">
-                        <p class="cabinet__form-result text">Некорректный формат данных</p>
+                        <p class="cabinet__form-result form__result text">Некорректный формат данных</p>
                      </div>
-                     <div class="cabinet__form-item">
+                     <div class="cabinet__form-item form__item">
                         <label class="cabinet__form-label text">Telegram</label>
                         <input type="text" class="cabinet__form-input text" placeholder="@username">
-                        <p class="cabinet__form-result text">Некорректный формат данных</p>
+                        <p class="cabinet__form-result form__result text">Некорректный формат данных</p>
                      </div>
                      <button class="cabinet__form-btn btn-outline">Зберегти</button>
                   </form>
@@ -242,33 +242,33 @@
                      <h2 class="cabinet__title title">Дані компанії</h2>
                      <img src="img/arrow-down.svg" alt="">
                   </div>
-                  <form action="#" class="cabinet__form accordion__content">
-                     <div class="cabinet__form-item">
+                  <form action="#" class="cabinet__form accordion__content formvalid">
+                     <div class="cabinet__form-item form__item">
                         <label class="cabinet__form-label text">Опис</label>
                         <textarea class="cabinet__form-input cabinet__form-textarea text" placeholder="Інформація про компанію..."></textarea>
-                        <p class="cabinet__form-result text">Некорректный формат данных</p>
+                        <p class="cabinet__form-result form__result text">Некорректный формат данных</p>
                      </div>
-                     <div class="cabinet__form-item">
+                     <div class="cabinet__form-item form__item">
                         <label class="cabinet__form-label text">Телефон</label>
                         <input type="tel" class="cabinet__form-input text" placeholder="Телефон компанії">
-                        <p class="cabinet__form-result text">Некорректный формат данных</p>
+                        <p class="cabinet__form-result form__result text">Некорректный формат данных</p>
                      </div>
-                     <div class="cabinet__form-item">
+                     <div class="cabinet__form-item form__item">
                         <label class="cabinet__form-label text">Instagram</label>
                         <input type="text" class="cabinet__form-input text" placeholder="@username">
-                        <p class="cabinet__form-result text">Некорректный формат данных</p>
+                        <p class="cabinet__form-result form__result text">Некорректный формат данных</p>
                      </div>
-                     <div class="cabinet__form-item">
+                     <div class="cabinet__form-item form__item">
                         <label class="cabinet__form-label text">Telegram</label>
                         <input type="text" class="cabinet__form-input text" placeholder="@username">
-                        <p class="cabinet__form-result text">Некорректный формат данных</p>
+                        <p class="cabinet__form-result form__result text">Некорректный формат данных</p>
                      </div>
-                     <div class="cabinet__form-item">
+                     <div class="cabinet__form-item form__item">
                         <label class="cabinet__form-label text">Місто</label>
                         <input type="text" class="cabinet__form-input text" placeholder="Вся країна">
-                        <p class="cabinet__form-result text">Некорректный формат данных</p>
+                        <p class="cabinet__form-result form__result text">Некорректный формат данных</p>
                      </div>
-                     <div class="cabinet__form-item">
+                     <div class="cabinet__form-item form__item">
                         <label class="cabinet__form-label text">Сфера діяльності</label>
                         <div class='cabinet__form-select select'>
                            <select>
@@ -278,12 +278,12 @@
                            </select>
                         </div>
                      </div>
-                     <div class="cabinet__form-item">
+                     <div class="cabinet__form-item form__item">
                         <label class="cabinet__form-label text">Посада</label>
                         <input type="text" class="cabinet__form-input text" placeholder="Ваша посада">
                      </div>
-                     <div class="cabinet__form-item">
-                        <div class="cabinet__form-download" id="holder">
+                     <div class="cabinet__form-item form__item">
+                        <div class="cabinet__form-download download" id="holder">
                            <label for="file" class="cabinet__form-link text"><img src="img/download.svg" alt=""> Вибрати
                               файл</label>
                            <p class="cabinet__form-text text">або</p>
@@ -302,25 +302,25 @@
                      <h2 class="cabinet__title title">Дані входу</h2>
                      <img src="img/arrow-down.svg" alt="">
                   </div>
-                  <form action="#" class="cabinet__form accordion__content">
-                     <div class="cabinet__form-item">
+                  <form action="#" class="cabinet__form accordion__content formvalid">
+                     <div class="cabinet__form-item form__item">
                         <label class="cabinet__form-label text">Електронна
                            пошта<span>*</span></label>
                         <input type="email" name="email" class="cabinet__form-input text" id="email"
                            placeholder="Ваша електронна пошта" required>
-                        <p class="cabinet__form-result text">Некорректный формат данных</p>
+                        <p class="cabinet__form-result form__result text">Некорректный формат данных</p>
                      </div>
-                     <div class="cabinet__form-item">
+                     <div class="cabinet__form-item form__item">
                         <label class="cabinet__form-label text">Пароль</label>
                         <input type="password" name="password" class="cabinet__form-input text" id="password"
                            placeholder="Введіть пароль">
-                        <p class="cabinet__form-result text">Некорректный формат данных</p>
+                        <p class="cabinet__form-result form__result text">Некорректный формат данных</p>
                      </div>
-                     <div class="cabinet__form-item">
+                     <div class="cabinet__form-item form__item">
                         <label class="cabinet__form-label text">Повторити пароль</label>
                         <input type="password" name="password" class="cabinet__form-input text" id="password2"
                            placeholder="Введіть пароль">
-                        <p class="cabinet__form-result text">Некорректный формат данных</p>
+                        <p class="cabinet__form-result form__result text">Некорректный формат данных</p>
                      </div>
                      <button class="cabinet__form-btn btn-outline" type="submit">Зберегти</button>
                   </form>

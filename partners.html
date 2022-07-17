@@ -70,7 +70,7 @@
           <h4 class="nav__title">Особистий кабінет</h4>
           <ul class="nav__list">
             <li><a href="cabinet.html" class="nav__text text">Особисті дані</a></li>
-            <li><a href="#" class="nav__text text">Замовлення</a></li>
+            <li><a href="orders.html" class="nav__text text">Замовлення</a></li>
             <li><a href="#" class="nav__text text">Заявки на співпрацю</a></li>
             <li><a href="#" class="nav__text text">Історія переглядів</a></li>
             <li><a href="#" class="nav__text text">Власні пропозиції</a></li>
@@ -128,7 +128,7 @@
    <div class="container">
       <div class="works">
          <div class="breadcrumps">
-            <a href="#" class="breadcrumps__text text">Головна</a>
+            <a href="index.html" class="breadcrumps__text text">Головна</a>
             <p class="breadcrumps__text text">></p>
             <a href="#" class="breadcrumps__text text">Стати партнером</a>
          </div>
@@ -147,31 +147,37 @@
                <p class="works__text text">Нашим сайтом користуються сотні рекламодавців, а отже шанс, що Ви продасте
                   свої послуги дуже великий. Лишіть свою заявку у формі і ми обов'язково зв'яжемось.</p>
             </div>
-            <form action="#" class="works__form">
+            <form action="#" class="works__form formvalid">
                <div class="works__form-container">
-                  <div class="works__form-item">
+                  <div class="works__form-item form__item">
                      <label class="cabinet__form-label text">Як до вас звератись</label>
                      <input type="text" class=" cabinet__form-input text" placeholder="Ваше ім’я">
+                     <p class="cabinet__form-result form__result text">Некорректный формат данных</p>
                   </div>
-                  <div class="works__form-item">
+                  <div class="works__form-item form__item">
                      <label class="cabinet__form-label text">Яку компанію Ви представляєте?                  </label>
                      <input type="text" class=" cabinet__form-input text" placeholder="Ваше ім’я">
+                     <p class="cabinet__form-result form__result text">Некорректный формат данных</p>
                   </div>
-                  <div class="works__form-item">
+                  <div class="works__form-item form__item">
                      <label class="cabinet__form-label text">Мобільний<span>*</span></label>
                      <input type="text" class=" cabinet__form-input text" placeholder="+38 (000) 000 00 00" required>
+                     <p class="cabinet__form-result form__result text">Некорректный формат данных</p>
                   </div>
-                  <div class="works__form-item">
+                  <div class="works__form-item form__item">
                      <label class="cabinet__form-label text">Електронна пошта<span>*</span></label>
                      <input type="text" class=" cabinet__form-input text" placeholder="Ваша електронна пошта" required>
+                     <p class="cabinet__form-result form__result text">Некорректный формат данных</p>
                   </div>
-                  <div class="works__form-item">
+                  <div class="works__form-item form__item">
                      <label class="cabinet__form-label text">Перерахуйте рекламні канали які плануєте продавати</label>
                      <textarea class="cabinet__form-input cabinet__form-textarea text" placeholder="Рекламні канали"></textarea>
+                     <p class="cabinet__form-result form__result text">Некорректный формат данных</p>
                   </div>
-                  <div class="works__form-item">
+                  <div class="works__form-item form__item">
                      <label class="cabinet__form-label text">Коментар</label>
                      <textarea class="cabinet__form-input cabinet__form-textarea text" placeholder="Введіть повідомлення"></textarea>
+                     <p class="cabinet__form-result form__result text">Некорректный формат данных</p>
                   </div>
                </div>
                <button type="submit" class="works__form-btn btn">Відправити запит</button>
